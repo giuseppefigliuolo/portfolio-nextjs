@@ -1,0 +1,111 @@
+@import "./reset";
+@import "./variables";
+@import "./bannertext";
+
+//NAV
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: $dark-purple;
+  color: white;
+  overflow-x: hidden;
+}
+#main-menu {
+  z-index: 100;
+  position: fixed;
+  color: white;
+  width: 100%;
+  .logo {
+    position: relative;
+    img {
+      max-width: 50px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  nav {
+    font-family: "Plus Jakarta Display", sans-serif;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: flex;
+    width: 40%;
+    min-width: 235px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+#cvs {
+  grid-area: 1/1/4/4;
+  z-index: 1;
+  width: 100%;
+  height: 130vh;
+  background: #0f0f36;
+  z-index: -1;
+  position: fixed !important;
+}
+
+.entry-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#prova {
+  background-color: red;
+  height: 1000px;
+  width: 50%;
+}
+
+/* FONTS */
+h1,
+h2,
+h3 {
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: 500;
+}
+
+.mono {
+  font-family: "Nova Mono", monospace;
+}
+
+.header {
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.sans-serif {
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+
+@import "./works-section";
+@import "./titles";
+@import "./work-preview";
+@import "./about";
+@import "./skills";
+@import "./contact";
+@import "./project";
+
+footer {
+  background-color: #181717;
+  padding: 2rem;
+  text-align: center;
+  border-top: 8px solid #272727;
+  span {
+    font-weight: 800;
+    color: #00d9ff;
+  }
+  p:last-of-type {
+    margin-top: 0.3rem;
+  }
+}

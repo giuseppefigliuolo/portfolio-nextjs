@@ -1,0 +1,67 @@
+@import "./variables";
+
+.contact {
+  font-weight: 300;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  p {
+    overflow: hidden;
+    span {
+      display: inline-block;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner {
+    padding: 2rem 0.8rem;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.6fr 1fr;
+  }
+  &__email {
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem 0;
+    p {
+      width: 80%;
+    }
+  }
+  &__looking {
+    text-align: right;
+    width: 70%;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  &__social {
+    grid-area: 3/1/4/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__icons {
+      p {
+        margin-top: 1rem;
+        width: 230px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  &__cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .email-btn {
+    align-self: center;
+    margin-top: 13px;
+    padding-right: 15%;
+  }
+}

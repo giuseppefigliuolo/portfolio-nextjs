@@ -1,0 +1,27 @@
+@import "./variables";
+
+.about {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    $dark-purple 34.8%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  p {
+    align-self: center;
+    max-width: 1000px;
+    margin-bottom: 3rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+    span {
+      color: $accent;
+      font-weight: 900;
+    }
+  }
+}

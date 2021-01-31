@@ -1,0 +1,21 @@
+@import "./variables";
+
+.header-title {
+  color: $accent;
+  font-size: 4rem;
+  margin-left: 10%;
+  overflow: hidden !important;
+  position: relative;
+  span {
+    display: inline-block;
+    height: fit-content;
+  }
+}
+
+#project {
+  .header-title {
+    margin-left: 0;
+    color: white;
+    font-size: 3.5rem;
+  }
+}

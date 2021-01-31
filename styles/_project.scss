@@ -1,0 +1,84 @@
+@import "./variables";
+
+#project {
+  padding-bottom: 2rem;
+}
+
+.project {
+  padding: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1250px;
+  margin: 0 auto;
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    color: $light-accent;
+    margin-bottom: 1rem;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  &__tilt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 800px;
+    margin-top: 3rem;
+    .tilt_img {
+      width: 100%;
+      height: 450px;
+      position: relative;
+    }
+  }
+  &__implementations {
+    padding-left: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    h3 {
+      // max-width: 200px;
+      padding-left: 2rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .button-cta {
+      align-self: center;
+      margin-top: 3rem;
+      overflow: hidden;
+    }
+    .tech-ul {
+      overflow: hidden;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  &__concept {
+    margin-top: 2rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    p {
+      width: 80%;
+    }
+  }
+  &__github {
+    margin-top: 2.4rem;
+    overflow: hidden;
+    a span {
+      display: flex;
+    }
+    p {
+      padding-left: 0.8rem;
+      color: $accent;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
