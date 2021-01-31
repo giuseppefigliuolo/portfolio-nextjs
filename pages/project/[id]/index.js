@@ -147,12 +147,25 @@ export async function getStaticProps(context) {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/projects`);
+  let paths = [];
+  let error = "";
+  try {
+    const res = await fetch(`${server}/api/projects`, {
+      method: "GET",
+      headers: {
+        // update with your user-agent
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
 
-  const projects = await res.json();
-
-  const ids = projects.map((project) => project.id);
-  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+    const projects = await res.json();
+    const ids = projects.map((project) => project.id);
+    paths = ids.map((id) => ({ params: { id: id.toString() } }));
+  } catch (e) {
+    error = e.toString();
+  }
 
   return {
     paths,
