@@ -29,4 +29,35 @@
     justify-content: center;
     align-items: center;
   }
+
+  #project {
+    .header-title {
+      font-size: 3rem;
+    }
+  }
+
+  #project .project {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__tilt .tilt_img {
+      height: 205px;
+    }
+
+    &__implementations {
+      padding: 0;
+    }
+
+    &__concept {
+      h3 {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
 }
