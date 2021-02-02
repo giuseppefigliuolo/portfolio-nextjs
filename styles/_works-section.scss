@@ -2,8 +2,19 @@
 
 #lavori {
   margin-top: -2rem;
-  display: flex;
-  flex-direction: column;
   background-color: $dark-purple;
   width: 100%;
+  .works {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 750px) {
+  #lavori {
+    .works {
+      padding: 0 1.8rem;
+    }
+  }
 }

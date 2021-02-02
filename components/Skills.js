@@ -17,7 +17,7 @@ import nextLogo from "../public/img/logos/next.svg";
 
 const Skills = () => {
   return (
-    <section id="#skills">
+    <section id="skills">
       <HeaderTitle title="Skills & Education" />
       <div className="skills-inner">
         <div className="skills-inner__education">

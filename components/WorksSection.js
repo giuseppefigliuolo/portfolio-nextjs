@@ -12,29 +12,31 @@ const WorksSection = () => {
   return (
     <section id="lavori">
       <HeaderTitle title="I miei lavori" />
-      <WorkPreview
-        backgroundImg={spaziSostenibiliImg}
-        number="1"
-        link="project/spazisostenibili"
-        title="Spazi Sostenibili"
-      />
-      <WorkPreview
-        backgroundImg={marioMeleImg}
-        reversed={true}
-        number="2"
-        title="Mario Mele Fashion Designer"
-      />
-      <WorkPreview
-        backgroundImg={soccerNodeImg}
-        number="3"
-        title="SoccerNode"
-      />
-      <WorkPreview
-        backgroundImg={chatAppImg}
-        reversed={true}
-        number="4"
-        title="My Chat App"
-      />
+      <div className="works">
+        <WorkPreview
+          backgroundImg={spaziSostenibiliImg}
+          number="1"
+          link="project/spazisostenibili"
+          title="Spazi Sostenibili"
+        />
+        <WorkPreview
+          backgroundImg={marioMeleImg}
+          reversed={true}
+          number="2"
+          title="Mario Mele Fashion Designer"
+        />
+        <WorkPreview
+          backgroundImg={soccerNodeImg}
+          number="3"
+          title="SoccerNode"
+        />
+        <WorkPreview
+          backgroundImg={chatAppImg}
+          reversed={true}
+          number="4"
+          title="My Chat App"
+        />
+      </div>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tilt from "react-tilt";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -19,7 +19,7 @@ const mainDivVariants = {
     width: 0,
   },
   visible: {
-    width: "27rem",
+    width: "100%",
     transition: { duration: 3, ...transition },
   },
   exit: {
@@ -41,10 +41,22 @@ const childVariants = {
 };
 
 const WorkPreview = ({ reversed, number, backgroundImg, link, title }) => {
+  const [isMobile, setIsMobile] = useState(false);
   const [ref, inView] = useInView({
     threshold: 0.5,
-    rootMargin: "-150px",
+    // rootMargin: "-50px",
   });
+
+  /* useEffect(() => {
+    if (window.innerWidth < 750) {
+      setIsMobile(true);
+      console.log("mobile" + isMobile);
+    } else {
+      setIsMobile(false);
+      console.log("desktop" + isMobile);
+    }
+  }, [ref, inView, isMobile]);
+ */
   return (
     <Tilt
       className={`Tilt work-preview ${reversed && "reversed"}`}
