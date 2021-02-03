@@ -55,7 +55,7 @@ const Nav = () => {
                 </a>
               </Link>
 
-              <Link href={`${server}/#works`} passHref={true}>
+              <Link href={`${server}/#works`}>
                 <a>
                   <motion.li variants={childVariants}>Progetti</motion.li>
                 </a>
