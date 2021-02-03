@@ -1,6 +1,6 @@
 @import "./variables";
 
-#lavori {
+#works {
   margin-top: -2rem;
   background-color: $dark-purple;
   width: 100%;
@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 750px) {
-  #lavori {
+  #works {
     .works {
       padding: 0 1.8rem;
     }

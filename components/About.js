@@ -3,7 +3,7 @@ import HeaderTitle from "./HeaderTitle";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <HeaderTitle title="Who am I?" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

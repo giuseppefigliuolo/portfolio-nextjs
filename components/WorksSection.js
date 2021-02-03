@@ -10,7 +10,7 @@ import chatAppImg from "../public/img/chat-app.png";
 
 const WorksSection = () => {
   return (
-    <section id="lavori">
+    <section id="works">
       <HeaderTitle title="I miei lavori" />
       <div className="works">
         <WorkPreview

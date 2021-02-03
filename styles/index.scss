@@ -40,6 +40,8 @@ body {
   }
 }
 
+@import "./mobile-nav";
+
 #cvs {
   grid-area: 1/1/4/4;
   z-index: 1;
