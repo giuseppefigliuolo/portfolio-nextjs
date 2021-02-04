@@ -61,3 +61,20 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .header-title {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #project {
+    .header-title {
+      font-size: 2.2rem;
+    }
+  }
+}

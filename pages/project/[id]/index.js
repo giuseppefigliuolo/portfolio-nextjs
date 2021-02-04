@@ -4,7 +4,7 @@ import Meta from "../../../components/Meta";
 import HeaderTitle from "../../../components/HeaderTitle";
 import Tilt from "react-tilt";
 import CallToAction from "../../../components/CallToAction/CallToAction";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { transition } from "../../../utils/fm-transitions";
 
 const containerVariants = {
@@ -16,6 +16,7 @@ const containerVariants = {
   },
   exit: {
     opacity: 0,
+    transition: { ...transition },
   },
 };
 
@@ -49,6 +50,20 @@ const goingUpVariants = {
   },
 };
 
+const projectSwitchVariants = {
+  hidden: {
+    x: 600,
+  },
+  visible: {
+    x: 0,
+    transition: { ...transition },
+  },
+  exit: {
+    x: -300,
+    transition: { ...transition },
+  },
+};
+
 const project = ({ project }) => {
   return (
     <motion.section
@@ -59,7 +74,7 @@ const project = ({ project }) => {
       exit="exit"
     >
       <Meta title={project.title} description={project.title} />
-      <div className="project">
+      <motion.div className="project" variants={projectSwitchVariants}>
         <HeaderTitle title={project.title} />
         <div className="project__content">
           <div className="project__tilt">
@@ -115,7 +130,7 @@ const project = ({ project }) => {
             <p>{project.description}</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

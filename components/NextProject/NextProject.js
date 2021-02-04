@@ -18,7 +18,7 @@ const NextProject = () => {
 
   return (
     <div className={styles.nextProject}>
-      <Link href={linkToNextProject()}>
+      <Link key={currentProjectNum + 1} href={linkToNextProject()}>
         <a>
           <p>
             <span>
