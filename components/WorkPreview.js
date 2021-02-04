@@ -47,16 +47,6 @@ const WorkPreview = ({ reversed, number, backgroundImg, link, title }) => {
     // rootMargin: "-50px",
   });
 
-  /* useEffect(() => {
-    if (window.innerWidth < 750) {
-      setIsMobile(true);
-      console.log("mobile" + isMobile);
-    } else {
-      setIsMobile(false);
-      console.log("desktop" + isMobile);
-    }
-  }, [ref, inView, isMobile]);
- */
   return (
     <Tilt
       className={`Tilt work-preview ${reversed && "reversed"}`}

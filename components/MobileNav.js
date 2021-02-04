@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import logoSvg from "../public/img/logo-white-fg.svg";
 import menuSvg from "../public/img/hamb-menu.svg";
+import { useRouter } from "next/router";
 import { server } from "../config/index";
 import { motion, AnimatePresence } from "framer-motion";
 import { transition } from "../utils/fm-transitions";
+import NextProject from "./NextProject/NextProject";
 
 const menuVariants = {
   hidden: {
@@ -21,6 +23,8 @@ const menuVariants = {
 };
 
 const MobileNav = () => {
+  const router = useRouter();
+  const home = router.pathname === "/";
   const [showMenu, setShowMenu] = useState(false);
 
   const closeMenu = () => setShowMenu(false);
@@ -36,9 +40,13 @@ const MobileNav = () => {
               </a>
             </Link>
           </div>
-          <div className="hamb-menu" onClick={() => setShowMenu(!showMenu)}>
-            <img src={menuSvg} />
-          </div>
+          {home ? (
+            <div className="hamb-menu" onClick={() => setShowMenu(!showMenu)}>
+              <img src={menuSvg} />
+            </div>
+          ) : (
+            <NextProject />
+          )}
         </div>
         <AnimatePresence>
           {showMenu && (

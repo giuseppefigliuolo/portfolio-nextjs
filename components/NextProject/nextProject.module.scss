@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.nextProject {
+  p {
+    font-size: 1.1rem;
+  }
+  .arrow {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .nextProject {
+    .projectSpan {
+      display: none;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+    }
+  }
+}

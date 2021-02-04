@@ -6,11 +6,9 @@
   color: $accent;
   border-radius: 5px;
   font-size: 1.08rem;
-  font-family: initial;
+  font-family: "Plus Jakarta Display", Arial, sans-serif;
   border: solid 2.5px $accent;
-  //   //   border-width: 0;
   cursor: pointer;
-  //   border-style: none;
   &:focus {
     outline: none;
     box-shadow: none;

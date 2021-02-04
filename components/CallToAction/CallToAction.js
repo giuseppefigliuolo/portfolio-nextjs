@@ -12,7 +12,6 @@ const CallToAction = ({ text, link, btnFunction }) => {
         whileHover={{
           backgroundColor: "#f5f397",
           color: "#07192f",
-          scale: 1.025,
         }}
       >
         {text}
