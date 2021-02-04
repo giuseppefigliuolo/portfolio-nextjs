@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: "1",
     title: "Spazi Sostenibili",
-    img: "/img/spazi-sostenibili.png",
+    img: "/img/spazi-sostenibili.webp",
     link: "https://moholepeople.it/spazisostenibili/",
     techs: ["PHP", "WordPress", "JS", "ACF", "AOS"],
     description:
@@ -12,7 +12,7 @@ export const projectsData = [
   {
     id: "2",
     title: "Mario Mele Fashion Designer",
-    img: "/img/mario-mele.png",
+    img: "/img/mario-mele.webp",
     link: "http://marioemme.netlify.com/",
     techs: ["JS", "Scss", "Swiper.js", "AOS"],
     description:
@@ -22,7 +22,7 @@ export const projectsData = [
   {
     id: "3",
     title: "SoccerNode",
-    img: "/img/soccernode.jpg",
+    img: "/img/soccernode.webp",
     link: "https://soccernode.herokuapp.com/",
     techs: ["React", "Scss", "Framer Motion", "AOS"],
     description:
@@ -32,7 +32,7 @@ export const projectsData = [
   {
     id: "4",
     title: "MyChatApp",
-    img: "/img/chat-app.png",
+    img: "/img/chat-app.webp",
     link: "http://figliuolo-chat.herokuapp.com/",
     techs: ["NodeJS", "Socket.io", "ExpressJS"],
     description:

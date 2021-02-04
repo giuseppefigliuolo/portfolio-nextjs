@@ -3,10 +3,10 @@ import HeaderTitle from "./HeaderTitle";
 import WorkPreview from "./WorkPreview";
 
 //Images
-import soccerNodeImg from "../public/img/soccernode.jpg";
-import spaziSostenibiliImg from "../public/img/spazi-sostenibili.png";
-import marioMeleImg from "../public/img/mario-mele.png";
-import chatAppImg from "../public/img/chat-app.png";
+import soccerNodeImg from "../public/img/soccernode.webp";
+import spaziSostenibiliImg from "../public/img/spazi-sostenibili.webp";
+import marioMeleImg from "../public/img/mario-mele.webp";
+import chatAppImg from "../public/img/chat-app.webp";
 
 const WorksSection = () => {
   return (
