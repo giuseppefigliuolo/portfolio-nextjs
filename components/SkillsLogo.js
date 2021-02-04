@@ -16,7 +16,7 @@ const childVariants = {
   },
 };
 
-const SkillsLogo = ({ img, width = 3, top, left, zIndex }) => {
+const SkillsLogo = ({ img, width = 3, top, left, zIndex, alt }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     rootMargin: "250px",
@@ -26,6 +26,7 @@ const SkillsLogo = ({ img, width = 3, top, left, zIndex }) => {
       <motion.img
         className="skills-logo__img"
         src={img}
+        alt={alt}
         style={{
           width: `${width}rem`,
           top: `${top}rem`,

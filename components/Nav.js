@@ -48,7 +48,7 @@ const Nav = () => {
             <div className="logo">
               <Link href="/">
                 <a>
-                  <img src={logoSvg} />
+                  <img src={logoSvg} alt="Giuseppe Figliuolo's logo" />
                 </a>
               </Link>
             </div>

@@ -52,28 +52,80 @@ const Skills = () => {
           />
         </div>
         <div className="skills__logos">
-          <SkillsLogo img={wordpressLogo} width={4} top={2} left={11} />
+          <SkillsLogo
+            img={wordpressLogo}
+            width={4}
+            top={2}
+            left={11}
+            alt="logo wordpress"
+          />
           <SkillsLogo
             img={phpLogo}
+            alt="logo php"
             width={3.3}
             top={5.6}
             left={10}
             zIndex={20}
           />
-          <SkillsLogo img={cssLogo} width={5.5} top={8.7} left={12} />
-          <SkillsLogo img={gitHubLogo} width={3.3} top={8} left={7} />
-          <SkillsLogo img={nodejsLogo} width={2} top={11} left={3} />
-          <SkillsLogo img={javascriptLogo} width={6} top={14} left={5} />
-          <SkillsLogo img={reactLogo} width={5.4} top={19} left={1} />
+          <SkillsLogo
+            img={cssLogo}
+            alt="logo css"
+            width={5.5}
+            top={8.7}
+            left={12}
+          />
+          <SkillsLogo
+            img={gitHubLogo}
+            alt="logo github"
+            width={3.3}
+            top={8}
+            left={7}
+          />
+          <SkillsLogo
+            img={nodejsLogo}
+            alt="logo nodejs"
+            width={2}
+            top={11}
+            left={3}
+          />
+          <SkillsLogo
+            img={javascriptLogo}
+            alt="logo javascript"
+            width={6}
+            top={14}
+            left={5}
+          />
+          <SkillsLogo
+            img={reactLogo}
+            alt="logo react"
+            width={5.4}
+            top={19}
+            left={1}
+          />
           <SkillsLogo
             img={illustratorLogo}
+            alt="logo illustrator"
             width={2.8}
             top={19}
             left={13}
             zIndex={3}
           />
-          <SkillsLogo img={figma} width={5} zIndex={2} top={20} left={14} />
-          <SkillsLogo img={nextLogo} width={6} zIndex={2} top={23} left={6} />
+          <SkillsLogo
+            img={figma}
+            alt="logo figma"
+            width={5}
+            zIndex={2}
+            top={20}
+            left={14}
+          />
+          <SkillsLogo
+            img={nextLogo}
+            alt="logo next"
+            width={6}
+            zIndex={2}
+            top={23}
+            left={6}
+          />
         </div>
       </div>
     </section>

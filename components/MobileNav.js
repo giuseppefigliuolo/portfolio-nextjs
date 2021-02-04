@@ -36,13 +36,13 @@ const MobileNav = () => {
           <div className="logo">
             <Link href="/">
               <a>
-                <img src={logoSvg} />
+                <img src={logoSvg} alt="Giuseppe Figliuolo's Logo" />
               </a>
             </Link>
           </div>
           {home ? (
             <div className="hamb-menu" onClick={() => setShowMenu(!showMenu)}>
-              <img src={menuSvg} />
+              <img src={menuSvg} alt="menu icon" />
             </div>
           ) : (
             <NextProject />
