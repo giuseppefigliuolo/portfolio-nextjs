@@ -55,27 +55,27 @@ const Nav = () => {
             {home ? (
               <ul className="nav-links">
                 <Link href={`${server}/#about`}>
-                  <a>
-                    <motion.li variants={childVariants}>About</motion.li>
-                  </a>
+                  <motion.li variants={childVariants}>
+                    <a>About</a>
+                  </motion.li>
                 </Link>
 
                 <Link href={`${server}/#works`}>
-                  <a>
-                    <motion.li variants={childVariants}>Progetti</motion.li>
-                  </a>
+                  <motion.li variants={childVariants}>
+                    <a>Projects</a>
+                  </motion.li>
                 </Link>
 
                 <Link href={`${server}/#skills`}>
-                  <a>
-                    <motion.li variants={childVariants}>Skills</motion.li>
-                  </a>
+                  <motion.li variants={childVariants}>
+                    <a>Skills</a>
+                  </motion.li>
                 </Link>
 
                 <Link href={`${server}/#contact`}>
-                  <a>
-                    <motion.li variants={childVariants}>Contact Me</motion.li>
-                  </a>
+                  <motion.li variants={childVariants}>
+                    <a>Contacts</a>
+                  </motion.li>
                 </Link>
               </ul>
             ) : (

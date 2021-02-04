@@ -64,10 +64,13 @@ const Contact = () => {
         <div className="contact__cv">
           <motion.p>
             <motion.span variants={childVariants}>
-              Or download <strong>my resume</strong> for more information.
+              Or give a look to <strong>my resume</strong> for more information.
             </motion.span>
           </motion.p>
-          <CallToAction text="Download resume" link="#" />
+          <CallToAction
+            text="Open resume"
+            link="https://drive.google.com/file/d/1MK-C8toNxAGqvEZHOyIsk95vRfVtLrVG/view"
+          />
         </div>
         <div className="contact__looking">
           <motion.p>

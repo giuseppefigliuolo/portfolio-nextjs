@@ -37,6 +37,12 @@ body {
     min-width: 235px;
     justify-content: space-evenly;
     align-items: center;
+    li {
+      cursor: pointer;
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 }
 
