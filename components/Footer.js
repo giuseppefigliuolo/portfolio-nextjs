@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
         React Made with <span>React</span> and &#x1F497;
       </p>
-      {home && <p>Thank you for having scrolled so far</p>}
+      {home && <p>Thank you for scrolling so far</p>}
     </footer>
   );
 };

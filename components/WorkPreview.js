@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Tilt from "react-tilt";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -40,8 +40,15 @@ const childVariants = {
   },
 };
 
-const WorkPreview = ({ reversed, number, backgroundImg, link, title }) => {
-  const [isMobile, setIsMobile] = useState(false);
+const WorkPreview = ({
+  reversed,
+  number,
+  backgroundImg,
+  link,
+  title,
+  description,
+}) => {
+  // const [isMobile, setIsMobile] = useState(false);
   const [ref, inView] = useInView({
     threshold: 0.5,
     // rootMargin: "-50px",
@@ -77,10 +84,7 @@ const WorkPreview = ({ reversed, number, backgroundImg, link, title }) => {
             variants={containerVariants}
           >
             <motion.h3 variants={childVariants}>{title}</motion.h3>
-            <motion.p variants={childVariants}>
-              Progetto nato dalla creazione di un testo a caso di 150 caratteri
-              approssimatamente non so.
-            </motion.p>
+            <motion.p variants={childVariants}>{description}</motion.p>
           </motion.div>
         </motion.div>
       </Link>

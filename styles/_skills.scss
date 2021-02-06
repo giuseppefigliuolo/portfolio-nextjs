@@ -99,3 +99,15 @@
     }
   }
 }
+
+@media (min-width: 700px) and (max-width: 1250px) {
+  .skills-inner__education {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 699px) {
+  .skills__logos {
+    left: 97px;
+  }
+}

@@ -1,14 +1,21 @@
 @import "./reset";
 @import "./variables";
-@import "./bannertext";
+
+@font-face {
+  font-family: "ATOsmose";
+  src: url("/fonts/ATOsmose-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
 
 //NAV
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Roboto Mono", monospace;
   background-color: $dark-purple;
   color: white;
   overflow-x: hidden;
 }
+
 #main-menu {
   z-index: 100;
   position: fixed;
@@ -24,7 +31,7 @@ body {
     }
   }
   nav {
-    font-family: "Plus Jakarta Display", sans-serif;
+    font-family: "ATOsmose", sans-serif;
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -47,6 +54,7 @@ body {
 }
 
 @import "./mobile-nav";
+@import "./bannertext";
 
 #cvs {
   grid-area: 1/1/4/4;
@@ -74,7 +82,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Plus Jakarta Display", sans-serif;
+  font-family: "ATOsmose", sans-serif;
   font-weight: 500;
 }
 
@@ -83,7 +91,7 @@ h3 {
 }
 
 .header {
-  font-family: "Plus Jakarta Display", sans-serif;
+  font-family: "ATOsmose", sans-serif;
   font-weight: 400;
   font-size: 2.4rem;
 }
@@ -93,7 +101,7 @@ section {
 }
 
 .sans-serif {
-  font-family: "Plus Jakarta Display", sans-serif;
+  font-family: "ATOsmose", sans-serif;
 }
 
 @import "./works-section";

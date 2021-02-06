@@ -33,7 +33,7 @@ const Project = ({ title, img, link = "#", techs, description, linkRepo }) => {
               </div>
               <div className="project__github">
                 <a href={linkRepo}>
-                  <img src={gitHubLogo} />
+                  <img src={gitHubLogo} alt="github logo" />
                   <p>GitHub repo here</p>
                 </a>
               </div>
