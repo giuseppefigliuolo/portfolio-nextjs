@@ -6,7 +6,7 @@ export const projectsData = [
     link: "https://moholepeople.it/spazisostenibili/",
     techs: ["PHP", "WordPress", "JS", "ACF", "AOS"],
     description:
-      "Spazi Sostenibili was an academic project at Mohole meant to develop a blog regarding Milan and present it to Fuorisalone design festival. This blog it's intended to talk about green and sustainable architecture and to make it, me and my co-worker Giorgio developed a WordPress theme from scratch.",
+      "Spazi Sostenibili was an academic project at Mohole meant to develop a blog regarding Milan and present it to Fuorisalone design festival. This blog is intended to talk about green and sustainable architecture. To make it me and my co-worker Giorgio developed a WordPress theme from scratch.",
     linkRepo: "https://github.com/giorgiocolombo/ss-wordpress",
   },
   {
@@ -26,7 +26,7 @@ export const projectsData = [
     link: "https://soccernode.herokuapp.com/",
     techs: ["React", "Scss", "Framer Motion", "AOS"],
     description:
-      "SoccerNode is a small web app made recently by myself to learn and practice React. As a big football fan I choose to interact with a football related REST API. The result is a website where you can easily check scores and standings of the best european leagues.",
+      "SoccerNode is a small web app I made recently to learn and practice React. As a big football fan, I choose to interact with a football related REST API. The result is a website where you can easily check scores and standings of the best European leagues.",
     linkRepo: "https://github.com/giuseppefigliuolo/soccernode",
   },
   {
@@ -36,7 +36,7 @@ export const projectsData = [
     link: "http://figliuolo-chat.herokuapp.com/",
     techs: ["NodeJS", "Socket.io", "ExpressJS"],
     description:
-      "This is a website developed for practicing during my Node.js course. Here I used express framework routing and the 'socket.io' framework for a realtime chat app.",
+      "This is a website developed for practice during my Node.js course. Here I used express framework routing and the 'Socket.io' framework for a realtime chat app.",
     linkRepo: "https://github.com/giuseppefigliuolo/websocket_chat-app",
   },
 ];
