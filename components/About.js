@@ -9,7 +9,7 @@ const About = () => {
         I'm Giuseppe, a 25 y/o web developer based in <strong>Milan</strong>. My
         specialization is <strong>front-end</strong> development and my
         favourite framework is React. I also love <strong>UX/UI design</strong>{" "}
-        and I make sure their principles are integrated in my work to recreate
+        and I make sure their principles are integrated in my works to recreate
         the best possible experience.
       </p>
       <p>
