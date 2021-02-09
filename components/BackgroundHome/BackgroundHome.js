@@ -18,9 +18,7 @@ const BackgroundHome = () => {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color1: 0x46ee7c,
-          color2: 0xdf233f,
-          colorMode: "lerp",
+          colorMode: "lerpGradient",
           quantity: 4.0,
         })
       );
